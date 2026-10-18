@@ -1,0 +1,13 @@
+.admin-shell { background: #0F172A; }
+.admin-sidebar { background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%); box-shadow: 4px 0 24px rgba(0,0,0,0.5); }
+.sidebar-logo { display:flex; align-items:center; gap:var(--sp-sm); padding:var(--sp-xl) var(--sp-lg); border-bottom:1px solid rgba(255,255,255,0.08); font-size:var(--font-md); font-weight:800; color:white; letter-spacing:-0.5px; }
+.sidebar-user { display:flex; align-items:center; gap:var(--sp-md); padding:var(--sp-lg); border-bottom:1px solid rgba(255,255,255,0.08); }
+.sidebar-nav { flex:1; padding:var(--sp-md) 0; display:flex; flex-direction:column; overflow-y:auto; }
+.admin-shell .nav-item { font-size:14px; padding:12px var(--sp-lg); }
+.admin-shell .nav-item:hover { background:rgba(255,255,255,0.08); }
+.admin-shell .nav-item.active { background:rgba(91,155,213,0.25); color:#7CC4F7; }
+.logout-btn { margin-top:auto; color:rgba(255,255,255,0.5) !important; }
+.logout-btn:hover { background:rgba(229,57,53,0.2) !important; color:#ff6b6b !important; }
+.admin-topbar { background:linear-gradient(90deg, var(--color-primary-main), var(--color-primary-dark)); border-bottom:none; }
+.main-content { background: #F1F5F9; }
+.admin-shell .page-body { background: #F1F5F9; }

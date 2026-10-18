@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "SaathiCircle",
+    "slug": "saathicircle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "saathicircle",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5B9BD5"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.saathicircle.app",
+      "icon": "./assets/icon.png",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Allow SaathiCircle to access your microphone for voice calls with companions.",
+        "NSCameraUsageDescription": "Allow SaathiCircle to access your camera if needed for video calls."
+      }
+    },
+    "android": {
+      "package": "com.saathicircle.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#5B9BD5"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.VIBRATE",
+        "android.permission.CALL_PHONE"
+      ]
+    },
+    "plugins": [
+      [
+        "@config-plugins/react-native-webrtc",
+        {
+          "appleAudioConfiguration": {
+            "category": "PlayAndRecord",
+            "mode": "VoiceChat",
+            "active": true
+          }
+        }
+      ],
+      "./plugins/withExpoModulesCorePatch",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 24
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b64793a3-799f-4739-811e-737ebe1bb6b3"
+      }
+    },
+    "owner": "saanyagarg"
+  }
+}

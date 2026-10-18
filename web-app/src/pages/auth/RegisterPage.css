@@ -1,0 +1,13 @@
+.register-page { min-height:100vh; display:flex; align-items:flex-start; justify-content:center; padding: var(--sp-xxl) var(--sp-lg); }
+.register-container { width:100%; max-width:560px; display:flex; flex-direction:column; gap:var(--sp-lg); }
+.register-header { display:flex; flex-direction:column; align-items:center; gap:var(--sp-sm); text-align:center; }
+.register-header h1 { font-size:var(--font-xxl); font-weight:800; color:var(--color-primary-main); }
+.register-header p { color:var(--color-dark-gray); font-size:var(--font-sm); }
+.register-card { padding:var(--sp-xl); }
+.role-grid { display:flex; flex-direction:column; gap:var(--sp-sm); }
+.role-card { padding:var(--sp-md) var(--sp-lg); border:2px solid var(--color-medium-gray); border-radius:var(--br-lg); background:var(--color-white); cursor:pointer; text-align:left; transition:all 0.2s; font-family:inherit; }
+.role-card:hover { border-color:var(--role-color, var(--color-primary-main)); background:var(--color-primary-light); }
+.role-card.selected { border-color:var(--role-color, var(--color-primary-main)); background:var(--color-primary-light); }
+.role-label { font-size:var(--font-md); font-weight:700; color:var(--color-black); }
+.role-desc { font-size:var(--font-xs); color:var(--color-dark-gray); margin-top:4px; }
+.form-row { display:flex; gap:var(--sp-md); }
